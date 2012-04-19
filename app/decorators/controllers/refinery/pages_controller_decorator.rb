@@ -5,7 +5,7 @@ Refinery::PagesController.class_eval do
     protected
     
       def find_menu
-        @page = Refinery::Page.in_menu.at(0)
+        @page = Refinery::Page.in_menu.at(-1)
       end
 
   end
