@@ -5,7 +5,7 @@ Refinery::Pages.configure do |config|
   # end
 
   # Configure global page default parts
-  # config.default_parts = ["Body", "Side Body"]
+  config.default_parts = ["Body"]
 
   # Configure whether to allow adding new page parts
   # config.new_page_parts = false
@@ -27,7 +27,7 @@ Refinery::Pages.configure do |config|
 
   # Set this to true if you want to override slug which automatically gets generated
   # when you create a page
-  # config.use_custom_slugs = false
+  config.use_custom_slugs = true
 
   # Set this to true if you want backend pages to be cached
   # config.cache_pages_backend = false
