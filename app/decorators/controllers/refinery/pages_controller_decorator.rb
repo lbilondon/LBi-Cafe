@@ -5,7 +5,11 @@ Refinery::PagesController.class_eval do
     protected
     
       def find_menu
-        @page = Refinery::Page.in_menu.at(-1)
+        Refinery::Page.in_menu.each do |page|
+          if page.lft == 1
+            @page = page 
+          end
+        end
       end
 
   end
