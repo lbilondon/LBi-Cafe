@@ -20,15 +20,20 @@ body {
 	font-size: @REM;
 }
 
-h1, 
-h2,
+h1,
+h2 {
+	margin-top:0.8em;
+	margin-bottom:0.2em;
+	font-size:2em;
+} 
+
 h3 {
 	margin:1.5em 0 0.25em 0;
 }
 
 p,
 ul {
-	margin:0 0 1em 0;
+	margin:0 0 0.5em 0;
 }
 
 strong {
@@ -59,10 +64,14 @@ a:hover {
 	border-bottom:1px dotted #000;
 }
 
+#logo {
+	margin:5px 0;
+}
+
 #logo a {
 	display:block;
-	height:171px;
-	width:315px;
+	height:170px;
+	width:480px;
 	background: url(/assets/LBi-logo-24.png) left top no-repeat;
 	text-indent:-999em;
 	overflow:hidden;
@@ -80,13 +89,13 @@ a:hover {
 }
 
 #page ul {
-	padding:0; 
-	
+	margin-top:0;
+	padding:0; 	
 }
 #page li {
 	list-style-type:none;
 	margin:0;
-	padding:0.25em 0;
+	padding:0.1em 0;
 }
 
 #body_content {
@@ -115,7 +124,11 @@ a:hover {
 	}
 	
 	#body_content_title {
+		display:inline;
+		margin:0 auto;
+		width:auto;
 		color: @lbiRed;
+		border-bottom:1px dotted @lbiRed;
 	}
 }
 
@@ -127,6 +140,11 @@ a:hover {
 	min-width:150px;
 	background:#fff;
 	padding:10px;
+}
+
+#menu h1,
+#menu h2 {
+	margin-top:0;
 }
 
 #menu li {
